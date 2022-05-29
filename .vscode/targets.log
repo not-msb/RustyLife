@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 15:13:25 2022
+# Make data base, printed on Sun May 29 15:47:37 2022
 
 # Variables
 
@@ -23,7 +21,7 @@ NO_AT_BRIDGE = 1
 # environment
 I3SOCK = /run/user/1000/i3/ipc-socket.4135
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a1578252-55fb-47b1-bda0-60a944a5896f.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a9071079-3700-43fc-8081-c6ed76c2ccb2.sock
 # environment
 VSCODE_CWD = /home/muhammed
 # environment
@@ -75,7 +73,7 @@ CURDIR := /home/muhammed/conway_game_of_life
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 LESSOPEN = |lesspipe %s
 # automatic
@@ -101,7 +99,7 @@ LV2_PATH = /usr/lib64/lv2
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 18775
+VSCODE_PID = 31040
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -183,7 +181,7 @@ CONFIG_PROTECT = /usr/share/gnupg/qualified.txt /usr/share/config /usr/lib64/lib
 # environment
 XDG_VTNR = 7
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := video
 # environment
 EDITOR = /bin/nano
 # environment
@@ -235,8 +233,7 @@ XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/muhammed
 # environment
 GDMSESSION = i3
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=6/140=4%
- 
+# Load=111/1024=11%, Rehash=0, Collisions=6/141=4%
 
 # Pattern-specific Variable Values
 
@@ -244,9 +241,9 @@ GDMSESSION = i3
 
 # Directories
 
-# . (device 28, inode 67990756): 10 files, no impossibilities.
+# . (device 28, inode 67990756): 11 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -257,9 +254,17 @@ GDMSESSION = i3
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-29 15:12:40.319183354
+#  Last modified 2022-05-29 15:30:29.056541953
 #  File has been updated.
 #  Successfully updated.
+
+video:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	cargo run
+	ffmpeg -r 10 -i video/cgol-%d.ppm out.mp4
 
 # Not a target:
 .DEFAULT:
@@ -272,22 +277,25 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 126 B / avg = 8 B
-# current buf: size = 8162 B / used = 126 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 140 B / avg = 8 B
+# current buf: size = 8162 B / used = 140 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 19 / hit rate = 21%
+# strcache performance: lookups = 22 / hit rate = 22%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Sun May 29 15:13:25 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
+# Finished Make data base on Sun May 29 15:47:37 2022
 
  
