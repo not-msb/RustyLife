@@ -1,4 +1,7 @@
+mod patterns;
+
 use std::{fs::{File, self}, io::Write};
+use patterns::*;
 
 const WIDTH:  usize = 100;
 const HEIGHT: usize = 100;
@@ -13,21 +16,23 @@ fn main() {
     fs::create_dir(folder).unwrap();
 
     let mut field: Field = [[0; WIDTH]; HEIGHT];
-    field[5][5] = 1;
-    field[6][6] = 1;
-    field[6][7] = 1;
-    field[7][6] = 1;
-    field[7][5] = 1;
 
-    for i in 1..10000 {
+    field = glider_generator(field);
+
+    for i in 0..10000 {
         let path: &str = &format!("video/cgol-{}.ppm", i);
         if File::open(path).is_ok() {
             fs::remove_file(path).unwrap();
         }
         let mut file = File::create(path).unwrap();
+        if i == 0 {
+            write_field_to_ppm(&mut file, field);
+            continue;
+        };
 
         field = calculate_changes(field);
         write_field_to_ppm(&mut file, field);
+        println!("rendered file {}", i);
     }
 }
 
