@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/muhammed/conway_game_of_life'
+make: Leaving directory '/home/muhammed/conway_game_of_life'
+ 
+make: *** No targets.  Stop.
+

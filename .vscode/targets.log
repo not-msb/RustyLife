@@ -1,0 +1,293 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun May 29 15:13:25 2022
+
+# Variables
+
+# environment
+JAVA_HOME = /home/muhammed/.gentoo/java-config-2/current-user-vm
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+I3SOCK = /run/user/1000/i3/ipc-socket.4135
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a1578252-55fb-47b1-bda0-60a944a5896f.sock
+# environment
+VSCODE_CWD = /home/muhammed
+# environment
+GCC_SPECS = 
+# environment
+GDM_LANG = en_US.utf8
+# default
+MAKE_COMMAND := make
+# environment
+GTK3_MODULES = xapp-gtk3-module
+# environment
+LADSPA_PATH = /usr/lib64/ladspa
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/muhammed/conway_game_of_life
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+MAIL = /var/mail/muhammed
+# environment
+XDG_DATA_DIRS = /home/muhammed/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share/gdm
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/muhammed/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# environment
+LANG = C
+# environment
+XAUTHORITY = /home/muhammed/.Xauthority
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/muhammed/conway_game_of_life
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = |lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = i3
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# environment
+LV2_PATH = /usr/lib64/lv2
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 18775
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+MANPAGER = manpager
+# automatic
+*F = $(notdir $*)
+# environment
+MANPATH = /home/muhammed/.gentoo/java-config-2/current-user-vm/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.37_p1/man:/etc/java-config-2/current-system-vm/man/:/usr/lib64/php8.0/man/:/usr/local/share/man:/usr/share/man:/usr/lib/rust/man:/usr/lib/llvm/13/share/man
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-Vge22fsYUV,guid=97e0684df20b75082bed5bf36291e100
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+ANDROID_HOME = /opt/android-sdk-update-manager
+# environment
+INFOPATH = /usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.37_p1/info:/usr/share/info
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/muhammed/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/13/bin:/opt/android-sdk-update-manager/tools:/opt/android-sdk-update-manager/platform-tools:/opt/cuda/bin
+# environment
+MOZ_GMP_PATH = /usr/lib64/nsbrowser/plugins/gmp-gmpopenh264/system-installed
+# default
+MAKEFILES := 
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+ANDROID_SWT = /usr/share/swt-3.7/lib
+# automatic
+?F = $(notdir $?)
+# environment
+GSETTINGS_BACKEND = dconf
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = i3
+# environment
+JAVAC = /home/muhammed/.gentoo/java-config-2/current-user-vm/bin/javac
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+LESS = -R -M --shift 5
+# environment
+DESKTOP_SESSION = i3
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = i3
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = muhammed
+# environment
+VBOX_APP_HOME = /usr/lib64/virtualbox
+# environment
+CONFIG_PROTECT_MASK = /etc/sandbox.d /etc/php/cli-php8.0/ext-active/ /etc/php/cgi-php8.0/ext-active/ /etc/php/apache2-php8.0/ext-active/ /etc/php/fpm-php8.0/ext-active/ /etc/php/phpdbg-php8.0/ext-active/ /etc/fonts/fonts.conf /etc/gentoo-release /etc/gconf /etc/terminfo /etc/dconf /etc/ca-certificates.conf /etc/revdep-rebuild
+# environment
+CONFIG_PROTECT = /usr/share/gnupg/qualified.txt /usr/share/config /usr/lib64/libreoffice/program/sofficerc
+# environment
+XDG_VTNR = 7
+# makefile
+.DEFAULT_GOAL := 
+# environment
+EDITOR = /bin/nano
+# environment
+DISPLAY = :0
+# environment
+GTK_MODULES = canberra-gtk-module
+# environment
+USER = muhammed
+# default
+MAKE_VERSION := 4.3
+# environment
+FLTK_DOCDIR = /usr/share/doc/fltk-1.3.5-r4/html
+# environment
+PAGER = /usr/bin/less
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/muhammed
+# environment
+JDK_HOME = /home/muhammed/.gentoo/java-config-2/current-user-vm
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+ANT_HOME = /usr/share/ant
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-27e74070-1.67.1-main.sock
+# environment
+XDG_SESSION_ID = 2
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/muhammed
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+GDMSESSION = i3
+# variable set hash-table stats:
+# Load=111/1024=11%, Rehash=0, Collisions=6/140=4%
+ 
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 28, inode 67990756): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-29 15:12:40.319183354
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/14=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 15 / storage = 126 B / avg = 8 B
+# current buf: size = 8162 B / used = 126 B / count = 15 / avg = 8 B
+
+# strcache performance: lookups = 19 / hit rate = 21%
+# hash-table stats:
+# Load=15/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Sun May 29 15:13:25 2022
+
+ 
