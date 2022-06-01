@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/muhammed/conway_game_of_life'
+make: Entering directory '/workspace/RustyLife'
 cargo run
 ffmpeg -r 10 -i video/cgol-%d.ppm out.mp4
-make: Leaving directory '/home/muhammed/conway_game_of_life'
+make: Leaving directory '/workspace/RustyLife'
  

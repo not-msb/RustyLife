@@ -1,239 +1,297 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.3
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 29 15:47:37 2022
+# Make data base, printed on Wed Jun  1 16:36:01 2022
 
 # Variables
 
-# environment
-JAVA_HOME = /home/muhammed/.gentoo/java-config-2/current-user-vm
-# environment
-GDK_BACKEND = x11
-# environment
-LC_ALL = C
-# environment
-NO_AT_BRIDGE = 1
-# environment
-I3SOCK = /run/user/1000/i3/ipc-socket.4135
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a9071079-3700-43fc-8081-c6ed76c2ccb2.sock
-# environment
-VSCODE_CWD = /home/muhammed
-# environment
-GCC_SPECS = 
-# environment
-GDM_LANG = en_US.utf8
-# default
-MAKE_COMMAND := make
-# environment
-GTK3_MODULES = xapp-gtk3-module
-# environment
-LADSPA_PATH = /usr/lib64/ladspa
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-.VARIABLES := 
-# environment
-PWD = /home/muhammed/conway_game_of_life
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# environment
-MAIL = /var/mail/muhammed
-# environment
-XDG_DATA_DIRS = /home/muhammed/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share/gdm
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
-# automatic
-%F = $(notdir $%)
-# environment
-VSCODE_CODE_CACHE_PATH = /home/muhammed/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
-# environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
-# environment
-LANG = C
-# environment
-XAUTHORITY = /home/muhammed/.Xauthority
-# default
-.LOADED := 
-# default
-.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# makefile
-MAKEFLAGS = pqrR
-# makefile
-CURDIR := /home/muhammed/conway_game_of_life
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
-# environment
-LESSOPEN = |lesspipe %s
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-MFLAGS = -pqrR
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# default
-.SHELLFLAGS := -c
-# environment
-XDG_CONFIG_DIRS = /etc/xdg
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# environment
-XDG_SESSION_DESKTOP = i3
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# environment
-LV2_PATH = /usr/lib64/lv2
-# automatic
-@F = $(notdir $@)
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 31040
-# environment
-XDG_SESSION_TYPE = x11
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# environment
-MANPAGER = manpager
-# automatic
-*F = $(notdir $*)
-# environment
-MANPATH = /home/muhammed/.gentoo/java-config-2/current-user-vm/man:/usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/man:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.37_p1/man:/etc/java-config-2/current-system-vm/man/:/usr/lib64/php8.0/man/:/usr/local/share/man:/usr/share/man:/usr/lib/rust/man:/usr/lib/llvm/13/share/man
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-Vge22fsYUV,guid=97e0684df20b75082bed5bf36291e100
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-ANDROID_HOME = /opt/android-sdk-update-manager
-# environment
-INFOPATH = /usr/share/gcc-data/x86_64-pc-linux-gnu/11.2.1/info:/usr/share/binutils-data/x86_64-pc-linux-gnu/2.37_p1/info:/usr/share/info
-# makefile
-SHELL = /bin/sh
-# default
-MAKECMDGOALS := all
-# environment
-SHLVL = 1
-# environment
-MAKELEVEL := 0
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-PATH = /home/muhammed/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/usr/lib/llvm/13/bin:/opt/android-sdk-update-manager/tools:/opt/android-sdk-update-manager/platform-tools:/opt/cuda/bin
-# environment
-MOZ_GMP_PATH = /usr/lib64/nsbrowser/plugins/gmp-gmpopenh264/system-installed
-# default
-MAKEFILES := 
-# environment
-MOTD_SHOWN = pam
-# automatic
-^F = $(notdir $^)
-# environment
-VSCODE_LOG_NATIVE = false
-# environment
-ANDROID_SWT = /usr/share/swt-3.7/lib
+RUBY_VERSION = ruby-2.7.6
 # automatic
 ?F = $(notdir $?)
 # environment
-GSETTINGS_BACKEND = dconf
+GP_OPEN_EDITOR = /ide/bin/remote-cli/gitpod-code
+# default
+.SHELLFLAGS := -c
 # environment
-XDG_SEAT = seat0
+VSCODE_LOG_NATIVE = false
 # environment
-XDG_CURRENT_DESKTOP = i3
+VSX_REGISTRY_URL = https://open-vsx.gitpod.io
 # environment
-JAVAC = /home/muhammed/.gentoo/java-config-2/current-user-vm/bin/javac
+GRADLE_HOME = /home/gitpod/.sdkman/candidates/gradle/current
+# environment
+rvm_path = /home/gitpod/.rvm
+# environment
+SUPERVISOR_ADDR = localhost:22999
+# environment
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/98acb7e0-41fb-41af-8a4d-e0cd71ece1ea
 # automatic
-+F = $(notdir $+)
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /workspace/RustyLife
+# makefile
+SHELL = /bin/sh
 # environment
-XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+VSCODE_NLS_CONFIG = {"locale":"nl","availableLanguages":{}}
 # environment
-LESS = -R -M --shift 5
+_ = /ide/node
 # environment
-DESKTOP_SESSION = i3
+GITPOD_THEIA_PORT = 23000
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = i3
+GITPOD_ANALYTICS_WRITER = segment
+# environment
+GO_VERSION = 1.18.2
+# environment
+MAVEN_HOME = /home/gitpod/.sdkman/candidates/maven/current
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+GITPOD_WORKSPACE_CONTEXT_URL = https://github.com/MSB246/RustyLife/tree/master
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
-LOGNAME = muhammed
+VSCODE_VERBOSE_LOGGING = true
 # environment
-VBOX_APP_HOME = /usr/lib64/virtualbox
+THEIA_WORKSPACE_ROOT = /workspace/RustyLife
 # environment
-CONFIG_PROTECT_MASK = /etc/sandbox.d /etc/php/cli-php8.0/ext-active/ /etc/php/cgi-php8.0/ext-active/ /etc/php/apache2-php8.0/ext-active/ /etc/php/fpm-php8.0/ext-active/ /etc/php/phpdbg-php8.0/ext-active/ /etc/fonts/fonts.conf /etc/gentoo-release /etc/gconf /etc/terminfo /etc/dconf /etc/ca-certificates.conf /etc/revdep-rebuild
+INFOPATH = :/home/linuxbrew/.linuxbrew/share/info
 # environment
-CONFIG_PROTECT = /usr/share/gnupg/qualified.txt /usr/share/config /usr/lib64/libreoffice/program/sofficerc
+LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-XDG_VTNR = 7
-# makefile
-.DEFAULT_GOAL := video
+GIT_EDITOR = /ide/bin/remote-cli/gitpod-code --wait
 # environment
-EDITOR = /bin/nano
-# environment
-DISPLAY = :0
-# environment
-GTK_MODULES = canberra-gtk-module
-# environment
-USER = muhammed
+VSCODE_CWD = /ide
 # default
-MAKE_VERSION := 4.3
+MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-FLTK_DOCDIR = /usr/share/doc/fltk-1.3.5-r4/html
+PATH = /ide/bin/remote-cli:/home/gitpod/.nix-profile/bin:/workspace/.cargo/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/home/gitpod/.pyenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.nix-profile/bin:/home/gitpod/.sdkman/candidates/maven/current/bin:/home/gitpod/.sdkman/candidates/java/current/bin:/home/gitpod/.sdkman/candidates/gradle/current/bin:/workspace/.cargo/bin:/home/gitpod/.rvm/gems/ruby-2.7.6/bin:/home/gitpod/.rvm/gems/ruby-2.7.6@global/bin:/home/gitpod/.rvm/rubies/ruby-2.7.6/bin:/home/gitpod/.pyenv/plugins/pyenv-virtualenv/shims:/workspace/go/bin:/home/gitpod/.nix-profile/bin:/ide/bin/remote-cli:/home/gitpod/go/bin:/home/gitpod/go-packages/bin:/home/gitpod/.nvm/versions/node/v16.15.0/bin:/workspace/.pip-modules/bin:/home/gitpod/.pyenv/bin:/workspace/.rvm/bin:/home/gitpod/.cargo/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:/usr/games:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/gitpod/.nvm/versions/node/v16.15.0/bin:/home/gitpod/.rvm/bin:/home/gitpod/.rvm/bin:/home/gitpod/.nvm/versions/node/v16.15.0/bin:/home/gitpod/.nvm/versions/node/v16.15.0/bin:/home/gitpod/.rvm/bin
 # environment
-PAGER = /usr/bin/less
+GITPOD_OWNER_ID = b39df254-816e-4a89-83c5-16dd958cb7cb
 # environment
-_ = /usr/bin/make
+GITPOD_WORKSPACE_ID = msb246-rustylife-tw2k969pms4
 # environment
-XDG_RUNTIME_DIR = /run/user/1000
+GITPOD_INTERVAL = 30000
 # environment
-XDG_SESSION_CLASS = user
+CARGO_HOME = /workspace/.cargo
+# environment
+rvm_stored_umask = 0022
+# environment
+GITPOD_WORKSPACE_CLUSTER_HOST = ws-eu46.gitpod.io
+# environment
+GITPOD_ANALYTICS_SEGMENT_KEY = bUY8IRdJ42KjLOBS9LoIHMYFBD8rSzjU
+# environment
+SDKMAN_DIR = /home/gitpod/.sdkman
+# environment
+GITPOD_REPO_ROOTS = /workspace/RustyLife
+# environment
+SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
+# environment
+GOPATH = /workspace/go
+# environment
+SDKMAN_PLATFORM = linuxx64
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ac3fd24a-d448-4337-a9c6-203a8c30549c.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+NIX_VERSION = 2.6.0
+# environment
+LS_COLORS = 
+# automatic
+%F = $(notdir $%)
+# environment
+GP_PREVIEW_BROWSER = /ide/bin/remote-cli/gitpod-code --preview
+# environment
+VISUAL = /ide/bin/remote-cli/gitpod-code
+# environment
+NIX_SSL_CERT_FILE = /etc/ssl/certs/ca-certificates.crt
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+rvm_bin_path = /home/gitpod/.rvm/bin
+# environment
+WORKSPACEKIT_WRAP_NETNS = true
+# default
+.LOADED := 
+# environment
+GEM_HOME = /home/gitpod/.rvm/gems/ruby-2.7.6
+# environment
+MANPATH = /home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man:/home/gitpod/.nix-profile/share/man::/home/linuxbrew/.linuxbrew/share/man
+# environment
+NODE_VERSION = 16.15.0
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/muhammed
+PYENV_SHELL = bash
 # environment
-JDK_HOME = /home/muhammed/.gentoo/java-config-2/current-user-vm
+HOME = /home/gitpod
 # environment
-ELECTRON_RUN_AS_NODE = 1
+THEIA_WEBVIEW_EXTERNAL_ENDPOINT = webview-{{hostname}}
 # environment
-ANT_HOME = /usr/share/ant
+LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-27e74070-1.67.1-main.sock
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-XDG_SESSION_ID = 2
+GITPOD_CLI_APITOKEN = hph0W9Na4NUGZjzIXF8nZ4Z9gKEhP3gG
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = msb246-rustylife-tw2k969pms4
+# environment
+GRADLE_USER_HOME = /workspace/.gradle/
+# environment
+MAKELEVEL := 0
+# environment
+GEM_PATH = /home/gitpod/.rvm/gems/ruby-2.7.6:/home/gitpod/.rvm/gems/ruby-2.7.6@global
+# environment
+SDKMAN_VERSION = 5.15.0
 # default
-.RECIPEPREFIX := 
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+IRBRC = /home/gitpod/.rvm/rubies/ruby-2.7.6/.irbrc
+# environment
+SHLVL = 0
+# environment
+NIX_PROFILES = /nix/var/nix/profiles/default /home/gitpod/.nix-profile
+# environment
+GITPOD_GIT_USER_NAME = MSB246
+# environment
+JAVA_HOME = /home/gitpod/.sdkman/candidates/java/current
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = gitpod
+# makefile
+.DEFAULT_GOAL := video
+# environment
+GOROOT = /home/gitpod/go
+# environment
+GITPOD_IDE_ALIAS = code
+# environment
+rvm_version = 1.29.12 (latest)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+GITPOD_REPO_ROOT = /workspace/RustyLife
+# environment
+PIP_USER = no
+# environment
+THEIA_RATELIMIT_LOG = 50
+# environment
+THEIA_MINI_BROWSER_HOST_PATTERN = browser-{{hostname}}
+# environment
+GITPOD_GIT_USER_EMAIL = msembulut@gmail.com
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+GITPOD_PREVENT_METADATA_ACCESS = true
+# environment
+GITPOD_HOST = https://gitpod.io
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/gitpod/.nvm
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+rvm_user_install_flag = 1
+# environment
+BROWSER = /ide/bin/helpers/browser.sh
+# environment
+GITPOD_MEMORY = 3435
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+GITPOD_TASKS = [{"init":"cargo build && make","command":"cargo watch -x run"}]
+# default
+MAKEFILES := 
+# environment
+GITPOD_CODE_HOST = https://gitpod.io
+# environment
+HOMEBREW_NO_AUTO_UPDATE = 1
 # automatic
 <F = $(notdir $<)
+# environment
+PIPENV_VENV_IN_PROJECT = true
+# environment
+TRIGGER_REBUILD = 1
+# environment
+GP_EXTERNAL_BROWSER = /ide/bin/remote-cli/gitpod-code --openExternal
+# environment
+SDKMAN_CANDIDATES_DIR = /home/gitpod/.sdkman/candidates
+# environment
+EDITOR = /ide/bin/remote-cli/gitpod-code
+# environment
+PWD = /workspace/RustyLife
+# environment
+LC_ALL = C
+# environment
+GITPOD_WORKSPACE_CONTEXT = {"ref":"master","refType":"branch","isFile":false,"path":"","title":"MSB246/RustyLife - master","revision":"504a6bf34b009d1170f2c0a0fd260a6f758484ce","repository":{"cloneUrl":"https://github.com/MSB246/RustyLife.git","host":"github.com","name":"RustyLife","owner":"MSB246","private":false},"normalizedContextURL":"https://github.com/MSB246/RustyLife/tree/master","checkoutLocation":"RustyLife","additionalFiles":{".gitpod.yml":"# This configuration file was automatically generated by Gitpod.\n# Please adjust to your needs (see https://www.gitpod.io/docs/config-gitpod-file)\n# and commit this file to your remote git repository to share the goodness with others.\n\ntasks:\n  - init: cargo build && make\n    command: cargo watch -x run\n\n\n"}}
+# environment
+JAVA_TOOL_OPTIONS =  -Xmx3435m
+# automatic
+^F = $(notdir $^)
+# environment
+rvm_prefix = /home/gitpod
 # default
 SUFFIXES := 
 # environment
-VSCODE_CLI = 1
+APACHE_DOCROOT_IN_REPO = public
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
+PYENV_VIRTUALENV_INIT = 1
 # environment
-XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/muhammed
+NGINX_DOCROOT_IN_REPO = public
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-GDMSESSION = i3
+rvm_loaded_flag = 1
+# environment
+GITPOD_INSTANCE_ID = 4202e485-143d-4767-b125-3496ede5b164
+# environment
+GITPOD_WORKSPACE_URL = https://msb246-rustylife-tw2k969pms4.ws-eu46.gitpod.io
+# default
+.RECIPEPREFIX := 
+# environment
+LANG = C
+# environment
+PYTHONUSERBASE = /workspace/.pip-modules
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=6/141=4%
+# Load=139/1024=14%, Rehash=0, Collisions=13/164=8%
 
 # Pattern-specific Variable Values
 
@@ -241,9 +299,9 @@ GDMSESSION = i3
 
 # Directories
 
-# . (device 28, inode 67990756): 11 files, no impossibilities.
+# . (device 2346, inode 603989616): 13 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -252,11 +310,24 @@ GDMSESSION = i3
 # Files
 
 # Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-29 15:30:29.056541953
+#  Last modified 2022-05-30 13:38:46
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 video:
 #  Implicit rule search has not been done.
@@ -266,22 +337,6 @@ video:
 	cargo run
 	ffmpeg -r 10 -i video/cgol-%d.ppm out.mp4
 
-# Not a target:
-.DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
- 
-make: *** No rule to make target 'all'.  Stop.
-
-#  File has not been updated.
-
 # files hash-table stats:
 # Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
@@ -290,12 +345,12 @@ make: *** No rule to make target 'all'.  Stop.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 140 B / avg = 8 B
-# current buf: size = 8162 B / used = 140 B / count = 17 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 154 B / avg = 8 B
+# current buf: size = 8162 B / used = 154 B / count = 18 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 22%
+# strcache performance: lookups = 24 / hit rate = 25%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Sun May 29 15:47:37 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/24=4%
+# Finished Make data base on Wed Jun  1 16:36:01 2022
 
  

@@ -1,25 +1,68 @@
 mod patterns;
 
-use std::{fs::{File, self}, io::Write};
+use std::{
+    fs::{self, File},
+    io::Write,
+    ops::{Index, IndexMut}, time::Instant,
+};
 use patterns::*;
 
-const WIDTH:  usize = 100;
+const WIDTH: usize = 100;
 const HEIGHT: usize = 100;
+const LENGTH: usize = WIDTH * HEIGHT;
 
-type Field = [[u8; WIDTH]; HEIGHT];
+#[derive(Debug, Clone, Copy)]
+pub struct Field {
+    data: [u8; LENGTH],
+}
+
+impl Field {
+    pub fn new() -> Self {
+        Field { data: [0; LENGTH] }
+    }
+}
+
+impl Index<isize> for Field {
+    type Output = u8;
+
+    fn index(&self, mut i: isize) -> &u8 {
+        while i < 0 {
+            i += LENGTH as isize;
+        }
+        while i >= LENGTH as isize {
+            i -= LENGTH as isize;
+        }
+        &self.data[i as usize]
+    }
+}
+
+impl IndexMut<isize> for Field {
+    fn index_mut(&mut self, mut i: isize) -> &mut u8 {
+        while i < 0 {
+            i += LENGTH as isize;
+        }
+        while i >= LENGTH as isize {
+            i -= LENGTH as isize;
+        }
+        &mut self.data[i as usize]
+    }
+}
 
 fn main() {
+    let now = Instant::now();
+
     let folder = "video";
     if fs::read_dir(folder).is_ok() {
         fs::remove_dir(folder).unwrap()
     }
     fs::create_dir(folder).unwrap();
 
-    let mut field: Field = [[0; WIDTH]; HEIGHT];
+    let mut field: Field = Field::new();
 
+    // field = glider(field);
     field = glider_generator(field);
 
-    for i in 0..10000 {
+    for i in 0..1000 {
         let path: &str = &format!("video/cgol-{}.ppm", i);
         if File::open(path).is_ok() {
             fs::remove_file(path).unwrap();
@@ -34,44 +77,37 @@ fn main() {
         write_field_to_ppm(&mut file, field);
         println!("rendered file {}", i);
     }
+
+    println!("{:?}", now.elapsed());
 }
 
-fn calculate_changes(field: Field) -> Field {
-    let mut new_field: Field = [[0; WIDTH]; HEIGHT];
-    for h in 0..HEIGHT as isize {
-        for w in 0..WIDTH as isize {
-            let ohl = if h == 0 { -(HEIGHT as isize-1)} else { 1 };
-            let owl = if w == 0 { -(WIDTH as isize-1)} else { 1 };
-            let ohh = if h == HEIGHT as isize-1 { -(HEIGHT as isize-1) } else { 1 };
-            let owh = if w == WIDTH as isize-1 { -(WIDTH as isize-1) } else { 1 };
-            let neighbours =
-                field[(h-ohl) as usize][(w-owl) as usize] + field[(h-ohl) as usize][w as usize] + field[(h-ohl) as usize][(w+owh) as usize] +
-                field[h as usize][(w-owl) as usize]       +                                       field[h as usize][(w+owh) as usize]       +
-                field[(h+ohh) as usize][(w-owl) as usize] + field[(h+ohh) as usize][w as usize] + field[(h+ohh) as usize][(w+owh) as usize];
-            if field[h as usize][w as usize] == 0 {
-                if neighbours == 3 {
-                    new_field[h as usize][w as usize] = 1;
-                }
-            } else if field[h as usize][w as usize] == 1 && (neighbours == 2 || neighbours == 3) {
-                new_field[h as usize][w as usize] = 1;
-            }
+pub fn calculate_changes(field: Field) -> Field {
+    let mut new_field: Field = Field::new();
+    for i in 0..LENGTH as isize {
+        let w = WIDTH as isize;
+        let neighbours =
+        field[i-w-1] + field[i-w] + field[i-w+1] +
+        field[i-1]   +              field[i+1]   +
+        field[i+w-1] + field[i+w] + field[i+w+1];
+
+        if (field[i] == 0 && neighbours == 3) || (field[i] == 1 && (neighbours == 2 || neighbours == 3)) {
+            new_field[i] = 1;
         }
     }
 
     new_field
 }
 
-fn write_field_to_ppm(file: &mut File, field: Field) {
+pub fn write_field_to_ppm(file: &mut File, field: Field) {
     let header = format!("P6 {} {} 255\n", WIDTH, HEIGHT);
     file.write_all(header.as_bytes()).unwrap();
-    for h in field.iter() {
-        for w in h.iter() {
-            let pixel = &[
-                255 - *w*255,
-                255 - *w*255,
-                255 - *w*255
-                ];
-            file.write_all(pixel).unwrap();
-        }
+    for i in 0..LENGTH as isize {
+        let p = field[i];
+        let pixel = &[
+            255-p*255,
+            255-p*255,
+            255-p*255
+            ];
+        file.write_all(pixel).unwrap();
     }
 }
