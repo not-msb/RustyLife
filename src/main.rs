@@ -1,15 +1,17 @@
 mod patterns;
 
+use patterns::*;
 use std::{
     fs::{self, File},
     io::Write,
     ops::{Index, IndexMut}, time::Instant,
 };
-use patterns::*;
 
-const WIDTH: usize = 100;
-const HEIGHT: usize = 100;
-const LENGTH: usize = WIDTH * HEIGHT;
+const WIDTH:        usize = 1000;
+const HEIGHT:       usize = 100;
+const LENGTH:       usize = WIDTH * HEIGHT;
+const PPM_SCALER:   usize = 1;
+const VIDEO_LENGTH: usize = 10000;
 
 #[derive(Debug, Clone, Copy)]
 pub struct Field {
@@ -19,6 +21,12 @@ pub struct Field {
 impl Field {
     pub fn new() -> Self {
         Field { data: [0; LENGTH] }
+    }
+}
+
+impl Default for Field {
+    fn default() -> Self {
+        Field::new()
     }
 }
 
@@ -62,7 +70,7 @@ fn main() {
     // field = glider(field);
     field = glider_generator(field);
 
-    for i in 0..1000 {
+    for i in 0..VIDEO_LENGTH {
         let path: &str = &format!("video/cgol-{}.ppm", i);
         if File::open(path).is_ok() {
             fs::remove_file(path).unwrap();
@@ -99,15 +107,18 @@ pub fn calculate_changes(field: Field) -> Field {
 }
 
 pub fn write_field_to_ppm(file: &mut File, field: Field) {
-    let header = format!("P6 {} {} 255\n", WIDTH, HEIGHT);
+    let header = format!("P6 {} {} 255\n", WIDTH*PPM_SCALER, HEIGHT*PPM_SCALER);
     file.write_all(header.as_bytes()).unwrap();
-    for i in 0..LENGTH as isize {
-        let p = field[i];
-        let pixel = &[
-            255-p*255,
-            255-p*255,
-            255-p*255
-            ];
-        file.write_all(pixel).unwrap();
+    for h in 0..HEIGHT*PPM_SCALER {
+        for w in 0..WIDTH*PPM_SCALER {
+            let i = w/PPM_SCALER + h/PPM_SCALER*WIDTH;
+            let p = field[i as isize];
+            let pixel = &[
+                255-p*255,
+                255-p*255,
+                255-p*255
+                ];
+            file.write_all(pixel).unwrap();
+        }
     }
 }

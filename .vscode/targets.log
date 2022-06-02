@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun  1 16:36:01 2022
+# Make data base, printed on Thu Jun  2 08:23:55 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ rvm_path = /home/gitpod/.rvm
 # environment
 SUPERVISOR_ADDR = localhost:22999
 # environment
-SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/98acb7e0-41fb-41af-8a4d-e0cd71ece1ea
+SUPERVISOR_ENVVAR_OTS = https://gitpod.io/api/ots/get/68aee31e-4721-47f0-b52d-87cf6816e4be
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
@@ -43,7 +43,7 @@ CURDIR := /workspace/RustyLife
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"nl","availableLanguages":{}}
+VSCODE_NLS_CONFIG = {"locale":"nl-NL","availableLanguages":{}}
 # environment
 _ = /ide/node
 # environment
@@ -105,7 +105,7 @@ SDKMAN_PLATFORM = linuxx64
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ac3fd24a-d448-4337-a9c6-203a8c30549c.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1af5a330-ef00-44b8-96ba-0427d999564e.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -147,7 +147,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-GITPOD_CLI_APITOKEN = hph0W9Na4NUGZjzIXF8nZ4Z9gKEhP3gG
+GITPOD_CLI_APITOKEN = p-QkmibpK7ByT-XdajR_yqwlgPdijB1n
 # automatic
 +F = $(notdir $+)
 # environment
@@ -277,7 +277,7 @@ NGINX_DOCROOT_IN_REPO = public
 # environment
 rvm_loaded_flag = 1
 # environment
-GITPOD_INSTANCE_ID = 4202e485-143d-4767-b125-3496ede5b164
+GITPOD_INSTANCE_ID = bf42191e-31ef-4475-82ca-98b8ab2509fd
 # environment
 GITPOD_WORKSPACE_URL = https://msb246-rustylife-tw2k969pms4.ws-eu46.gitpod.io
 # default
@@ -299,9 +299,9 @@ MY_RUBY_HOME = /home/gitpod/.rvm/rubies/ruby-2.7.6
 
 # Directories
 
-# . (device 2346, inode 603989616): 13 files, no impossibilities.
+# . (device 2346, inode 268782311): 12 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -345,12 +345,12 @@ video:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 154 B / avg = 8 B
-# current buf: size = 8162 B / used = 154 B / count = 18 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 142 B / avg = 8 B
+# current buf: size = 8162 B / used = 142 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 24 / hit rate = 25%
+# strcache performance: lookups = 23 / hit rate = 26%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Wed Jun  1 16:36:01 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Thu Jun  2 08:23:55 2022
 
  
